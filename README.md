@@ -1,5 +1,7 @@
 # Five Parsecs From Home — Campaign Datapad
 
+**[Launch Live App](https://smileywiley.github.io/five-parsecs-datapad/)**
+
 A client-side web application for tracking **Five Parsecs From Home** tabletop campaigns with a **Solo Game Master's Guide**–inspired structured narrative journal. Designed for table-side use with a dark/light datapad UI, instant `localStorage` persistence, and zero backend setup.
 
 ## Features
