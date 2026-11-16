@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-150;
+  }
+}
+
+/* Markdown preview styling */
+.prose-datapad h1 {
+  @apply text-xl font-bold mt-4 mb-2 text-slate-900 dark:text-cyan-300 border-b border-slate-200 dark:border-slate-800 pb-1;
+}
+.prose-datapad h2 {
+  @apply text-lg font-semibold mt-3 mb-1.5 text-slate-800 dark:text-amber-300;
+}
+.prose-datapad h3 {
+  @apply text-base font-semibold mt-2.5 mb-1 text-slate-800 dark:text-slate-200;
+}
+.prose-datapad p {
+  @apply my-2 leading-relaxed text-sm text-slate-700 dark:text-slate-300;
+}
+.prose-datapad ul {
+  @apply list-disc pl-5 my-2 space-y-1 text-sm text-slate-700 dark:text-slate-300;
+}
+.prose-datapad ol {
+  @apply list-decimal pl-5 my-2 space-y-1 text-sm text-slate-700 dark:text-slate-300;
+}
+.prose-datapad blockquote {
+  @apply border-l-2 border-cyan-500/60 pl-3 italic my-2 text-sm text-slate-600 dark:text-slate-400;
+}
+.prose-datapad code {
+  @apply px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-xs font-mono text-cyan-700 dark:text-cyan-300;
+}
+.prose-datapad strong {
+  @apply font-semibold text-slate-900 dark:text-slate-100;
+}
+.prose-datapad hr {
+  @apply my-3 border-slate-200 dark:border-slate-800;
+}
